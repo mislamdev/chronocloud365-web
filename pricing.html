@@ -29,6 +29,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<!-- Noto Sans Bengali, subset to the taka sign (U+09F3) only - 4 KB, and the
+     only way the currency symbol renders on devices without a Bengali font. -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&text=%E0%A7%B3&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/styles.css" />
 
 <!-- Apply the theme before first paint so theme-swapped assets (such as the
@@ -363,7 +366,7 @@
             for the services around it. We show both, with the same honesty.
           </p>
           <p class="mt-4 text-sm text-muted">
-            All figures are indicative and exclusive of statutory taxes. A firm quote is issued
+            All figures are in Bangladeshi Taka (৳) and are indicative, exclusive of statutory taxes. A firm quote is issued
             after a scoping call, with a fixed price and a fixed date.
           </p>
         </div>
@@ -391,7 +394,7 @@
         <article class="card flex flex-col p-7 lg:p-8">
           <p class="text-xs font-bold uppercase tracking-[0.14em] text-muted">Starter</p>
           <p class="mt-4 font-display text-4xl font-extrabold text-heading">
-            &#8377;<span data-count-to="24900" data-count-suffix="">&#8377;24,900</span>
+            <span data-count-to="31000" data-count-prefix="৳">৳31,000</span>
             <span class="text-base font-semibold text-muted">/ month</span>
           </p>
           <p class="mt-2 text-sm text-body">Billed annually. From 10 named users.</p>
@@ -412,7 +415,7 @@
           <span class="absolute -top-3 left-7 rounded-full bg-brand px-3 py-1 text-[11px] font-bold uppercase tracking-[0.12em] text-black">Most chosen</span>
           <p class="text-xs font-bold uppercase tracking-[0.14em] text-brand-deep">Growth</p>
           <p class="mt-4 font-display text-4xl font-extrabold text-heading">
-            &#8377;<span data-count-to="64900">&#8377;64,900</span>
+            <span data-count-to="81000" data-count-prefix="৳">৳81,000</span>
             <span class="text-base font-semibold text-muted">/ month</span>
           </p>
           <p class="mt-2 text-sm text-body">Billed annually. From 25 named users.</p>
@@ -480,61 +483,61 @@
           <tbody class="text-body">
             <tr class="border-b border-line/70">
               <th scope="row" class="py-4 pr-6 font-medium text-heading">Sales &amp; CRM</th>
-              <td class="px-4 py-4">&#8377;450</td>
+              <td class="px-4 py-4">৳550</td>
               <td class="px-4 py-4">Starter</td>
               <td class="py-4 pl-4 text-muted">Pipeline, quotations, territories</td>
             </tr>
             <tr class="border-b border-line/70">
               <th scope="row" class="py-4 pr-6 font-medium text-heading">Inventory &amp; warehousing</th>
-              <td class="px-4 py-4">&#8377;450</td>
+              <td class="px-4 py-4">৳550</td>
               <td class="px-4 py-4">Starter</td>
               <td class="py-4 pl-4 text-muted">Batches, serials, cycle counts</td>
             </tr>
             <tr class="border-b border-line/70">
               <th scope="row" class="py-4 pr-6 font-medium text-heading">Finance &amp; accounting</th>
-              <td class="px-4 py-4">&#8377;600</td>
+              <td class="px-4 py-4">৳750</td>
               <td class="px-4 py-4">Starter</td>
-              <td class="py-4 pl-4 text-muted">GST, e-invoicing, reconciliation</td>
+              <td class="py-4 pl-4 text-muted">VAT, e-invoicing, reconciliation</td>
             </tr>
             <tr class="border-b border-line/70">
               <th scope="row" class="py-4 pr-6 font-medium text-heading">Retail POS</th>
-              <td class="px-4 py-4">&#8377;550</td>
+              <td class="px-4 py-4">৳700</td>
               <td class="px-4 py-4">Growth</td>
               <td class="py-4 pl-4 text-muted">Per terminal, offline mode included</td>
             </tr>
             <tr class="border-b border-line/70">
               <th scope="row" class="py-4 pr-6 font-medium text-heading">Manufacturing</th>
-              <td class="px-4 py-4">&#8377;750</td>
+              <td class="px-4 py-4">৳950</td>
               <td class="px-4 py-4">Growth</td>
               <td class="py-4 pl-4 text-muted">BOM, work orders, shop floor</td>
             </tr>
             <tr class="border-b border-line/70">
               <th scope="row" class="py-4 pr-6 font-medium text-heading">Payroll &amp; people</th>
-              <td class="px-4 py-4">&#8377;400</td>
+              <td class="px-4 py-4">৳500</td>
               <td class="px-4 py-4">Growth</td>
               <td class="py-4 pl-4 text-muted">Statutory filings included</td>
             </tr>
             <tr class="border-b border-line/70">
               <th scope="row" class="py-4 pr-6 font-medium text-heading">ChronoFlow automation</th>
-              <td class="px-4 py-4">&#8377;900</td>
+              <td class="px-4 py-4">৳1,100</td>
               <td class="px-4 py-4">Growth</td>
               <td class="py-4 pl-4 text-muted">Includes 5,000 runs / month</td>
             </tr>
             <tr class="border-b border-line/70">
               <th scope="row" class="py-4 pr-6 font-medium text-heading">ChronoReach marketing</th>
-              <td class="px-4 py-4">&#8377;700</td>
+              <td class="px-4 py-4">৳900</td>
               <td class="px-4 py-4">Growth</td>
               <td class="py-4 pl-4 text-muted">Includes 50,000 contacts</td>
             </tr>
             <tr class="border-b border-line/70">
               <th scope="row" class="py-4 pr-6 font-medium text-heading">ChronoInsight BI</th>
-              <td class="px-4 py-4">&#8377;850</td>
+              <td class="px-4 py-4">৳1,050</td>
               <td class="px-4 py-4">Enterprise</td>
               <td class="py-4 pl-4 text-muted">Warehouse, dashboards, forecasting</td>
             </tr>
             <tr>
               <th scope="row" class="py-4 pr-6 font-medium text-heading">ChronoSecure managed SOC</th>
-              <td class="px-4 py-4">&#8377;650</td>
+              <td class="px-4 py-4">৳800</td>
               <td class="px-4 py-4">Enterprise</td>
               <td class="py-4 pl-4 text-muted">Per managed endpoint</td>
             </tr>
@@ -569,7 +572,7 @@
             <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Written scope and acceptance criteria</li>
             <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Weekly demo and shared delivery board</li>
             <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>30-day hypercare included</li>
-            <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Typical: &#8377;1.5L &ndash; &#8377;25L per project</li>
+            <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Typical: ৳2L &ndash; ৳31L per project</li>
           </ul>
           <a href="services.html" class="btn btn-secondary mt-7 w-full">Browse services</a>
         </article>
@@ -585,7 +588,7 @@
             <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Named account manager and team</li>
             <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>SLA credits if we miss our commitments</li>
             <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Quarterly automation and cost review</li>
-            <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Typical: &#8377;35K &ndash; &#8377;4L per month</li>
+            <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Typical: ৳45K &ndash; ৳5L per month</li>
           </ul>
           <a href="contact.html" class="btn btn-secondary mt-7 w-full">Discuss a retainer</a>
         </article>
@@ -601,7 +604,7 @@
             <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Findings you keep and own</li>
             <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Costed, sequenced roadmap</li>
             <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Board-ready presentation</li>
-            <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Typical: &#8377;1.5L &ndash; &#8377;8L per engagement</li>
+            <li class="flex gap-2.5"><svg class="mt-0.5 h-4.5 w-4.5 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Typical: ৳2L &ndash; ৳10L per engagement</li>
           </ul>
           <a href="services.html#consulting" class="btn btn-secondary mt-7 w-full">Scope an advisory</a>
         </article>
@@ -633,8 +636,8 @@
               <input id="roi-hours" type="number" min="1" max="40" value="6" inputmode="numeric" class="mt-2 w-full rounded-brand border border-line-strong bg-surface px-3.5 py-2.5 text-sm text-heading focus:border-brand focus:outline-none" />
             </div>
             <div>
-              <label for="roi-cost" class="block text-sm font-semibold text-heading">Fully loaded cost / hour (&#8377;)</label>
-              <input id="roi-cost" type="number" min="50" max="5000" step="10" value="350" inputmode="numeric" class="mt-2 w-full rounded-brand border border-line-strong bg-surface px-3.5 py-2.5 text-sm text-heading focus:border-brand focus:outline-none" />
+              <label for="roi-cost" class="block text-sm font-semibold text-heading">Fully loaded cost / hour (৳)</label>
+              <input id="roi-cost" type="number" min="50" max="5000" step="10" value="450" inputmode="numeric" class="mt-2 w-full rounded-brand border border-line-strong bg-surface px-3.5 py-2.5 text-sm text-heading focus:border-brand focus:outline-none" />
             </div>
           </div>
 
@@ -645,7 +648,7 @@
             </div>
             <div class="rounded-xl border border-line bg-surface p-5">
               <p class="text-[11px] font-semibold uppercase tracking-wider text-muted">Annual value</p>
-              <p class="mt-1.5 font-display text-2xl font-extrabold text-brand-deep" data-roi-value>&#8377;0</p>
+              <p class="mt-1.5 font-display text-2xl font-extrabold text-brand-deep" data-roi-value>৳0</p>
             </div>
             <div class="rounded-xl border border-line bg-surface p-5">
               <p class="text-[11px] font-semibold uppercase tracking-wider text-muted">Assumed efficiency gain</p>
@@ -777,7 +780,7 @@
             <div data-accordion-panel class="hidden pb-5 pr-10 text-sm leading-relaxed text-body">
               Annual subscriptions are invoiced annually in advance. Projects are invoiced 40% on
               signature, 40% at the halfway demo and 20% on acceptance. Retainers are invoiced
-              monthly in advance. We accept NEFT, RTGS, UPI, card and bank transfer.
+              monthly in advance. We accept bKash, Nagad, bank transfer and card.
             </div>
           </div>
           <div data-accordion-item class="py-2">

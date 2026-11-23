@@ -349,11 +349,13 @@
     var roiHoursOut = document.querySelector("[data-roi-hours]");
     var roiValueOut = document.querySelector("[data-roi-value]");
 
-    var formatINR = function (value) {
-      if (value >= 10000000) return "₹" + (value / 10000000).toFixed(2) + " Cr";
-      if (value >= 100000) return "₹" + (value / 100000).toFixed(1) + " L";
-      if (value >= 1000) return "₹" + Math.round(value / 1000) + "K";
-      return "₹" + Math.round(value);
+    var formatBDT = function (value) {
+      // Bangladeshi Taka, abbreviated the way amounts are written locally:
+      // taka, then thousand (K), then lakh (L), then crore (Cr).
+      if (value >= 10000000) return "৳" + (value / 10000000).toFixed(2) + " Cr";
+      if (value >= 100000) return "৳" + (value / 100000).toFixed(2).replace(/\.?0+$/, "") + " L";
+      if (value >= 1000) return "৳" + Math.round(value / 100) / 10 + "K";
+      return "৳" + Math.round(value);
     };
 
     var formatNumber = function (value) {
@@ -369,7 +371,7 @@
       var value = reclaimed * cost;
 
       if (roiHoursOut) roiHoursOut.textContent = formatNumber(reclaimed) + " hrs";
-      if (roiValueOut) roiValueOut.textContent = formatINR(value);
+      if (roiValueOut) roiValueOut.textContent = formatBDT(value);
     };
 
     [roiPeople, roiHours, roiCost].forEach(function (field) {

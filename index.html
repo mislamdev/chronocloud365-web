@@ -29,6 +29,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<!-- Noto Sans Bengali, subset to the taka sign (U+09F3) only - 4 KB, and the
+     only way the currency symbol renders on devices without a Bengali font. -->
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;600;700;800&text=%E0%A7%B3&display=swap" rel="stylesheet" />
 <link rel="stylesheet" href="assets/css/styles.css" />
 
 <!-- Apply the theme before first paint so theme-swapped assets (such as the
@@ -437,7 +440,7 @@
                   <div class="grid grid-cols-2 gap-2.5 sm:grid-cols-4">
                     <div class="rounded-lg border border-line bg-surface p-2.5">
                       <p class="text-[9px] font-semibold uppercase tracking-wider text-muted">Revenue</p>
-                      <p class="mt-1 font-display text-sm font-bold text-heading">&#8377;18.4L</p>
+                      <p class="mt-1 font-display text-sm font-bold text-heading">৳23L</p>
                       <p class="mt-0.5 text-[9px] font-semibold text-success">&#8593; 12.4%</p>
                     </div>
                     <div class="rounded-lg border border-line bg-surface p-2.5">
@@ -587,7 +590,7 @@
           </p>
           <ul class="mt-5 grid gap-2 text-sm text-body">
             <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Multi-store, multi-branch, multi-currency</li>
-            <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>GST, e-invoicing and statutory reporting</li>
+            <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>VAT, e-invoicing and statutory reporting</li>
             <li class="flex items-start gap-2"><svg class="mt-0.5 h-4 w-4 shrink-0 text-brand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" aria-hidden="true"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round" /></svg>Deploy cloud, on-premise or hybrid</li>
           </ul>
           <a href="products.html#magic-erp" class="link-underline mt-6 inline-flex items-center gap-1.5 self-start text-sm">
