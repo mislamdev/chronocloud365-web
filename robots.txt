@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Crawl the catalogue, skip the utility endpoints.
+Disallow: /404.html
+
+Sitemap: https://www.chronocloud365.com/sitemap.xml
