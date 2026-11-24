@@ -185,10 +185,12 @@
       var decimals = (el.getAttribute("data-count-decimals") || "0") | 0;
       var suffix = el.getAttribute("data-count-suffix") || "";
       var prefix = el.getAttribute("data-count-prefix") || "";
+      // Years and other small round numbers should not get thousands separators.
+      var grouped = el.getAttribute("data-count-group") !== "false";
 
       var format = function (value) {
         if (decimals === 0) {
-          return Math.round(value).toLocaleString("en-IN");
+          return grouped ? Math.round(value).toLocaleString("en-IN") : String(Math.round(value));
         }
         return value.toFixed(decimals);
       };
